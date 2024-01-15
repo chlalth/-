@@ -1,41 +1,41 @@
-패키지 com. example.project1;
+package com.example.project1;
 
-indrox.appcompat.app을 가져옵니다.AppCompat Activity;
-indrox.viewpager를 가져옵니다.위젯.ViewPager;
-androidx.viewpager2. adapter를 가져옵니다.FragmentStateAdapter;
-indrox.viewpager2를 가져옵니다.위젯.페이지 보기2;
-import com. example.project1.원 표시기 3;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
+import com.example.project1.CircleIndicator3;
 
-idro.os를 가져옵니다.묶음;
+import android.os.Bundle;
 
 
-공용 클래스 MainActivity가 AppCompatActivity를 확장함 {
+public class MainActivity extends AppCompatActivity {
 
-    개인 ViewPager2 mPager;
-    개인 FragmentStateAdapter 호출기Adapter;
-    private intum_page = 3;
-    사설 원 표시기 3m 표시기;
+    private ViewPager2 mPager;
+    private FragmentStateAdapter pagerAdapter;
+    private int num_page = 3;
+    private CircleIndicator3 mIndicator;
 
-    @오버라이드
-    생성 시 보호된 공백(Bundle savedInstanceState) {
-        super.onCreate(저장된 인스턴스 상태);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         /**
          * 가로 슬라이드 뷰 Fragment
          */
 
-        //뷰페이지2
-        mPager = ViewById(R.id .viewpager) 찾기;
-        //어댑터
-        pagerAdapter = 새로운 MyAdapter(이것, num_page);
+        //ViewPager2
+        mPager = findViewById(R.id.viewpager);
+        //Adapter
+        pagerAdapter = new MyAdapter(this, num_page);
         mPager.setAdapter(pagerAdapter);
-        //표시기
-        mindicator = ViewById(R.id .indicator) 찾기;
-        지시자.setViewPager(mPager);
-        mindicator.create지표(num_page,0);
-        //페이지 설정 보기
-        mPager.set Orientation(페이지 2 보기).방향_수평);
+        //Indicator
+        mIndicator = findViewById(R.id.indicator);
+        mIndicator.setViewPager(mPager);
+        mIndicator.createIndicators(num_page,0);
+        //ViewPager Setting
+        mPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
 
         /**
          * 이 부분 조정하여 처음 시작하는 이미지 설정.
@@ -43,22 +43,22 @@ idro.os를 가져옵니다.묶음;
          * 좌 우로 슬라이딩 할 수 있게 함. 거의 무한대로
          */
 
-        mPager.setCurrentItem(1000); //
-        mPager.setOffscreenPageLimit(4); //
+        mPager.setCurrentItem(1000); //시작 지점
+        mPager.setOffscreenPageLimit(4); //최대 이미지 수
 
-        mPager.registerOnPageChangeCallback(새로운 ViewPager2).페이지 변경콜백() {
-            @오버라이드
-            페이지 스크롤의 공용 공백(위치, 부동 위치Offset, 위치OffsetPixels) {
-                super.Page Scrolled(위치, 위치 오프셋, 위치 오프셋 픽셀);
-                (위치 OffsetPixels == 0) {
-                    mPager.setCurrentItem(위치);
+        mPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                super.onPageScrolled(position, positionOffset, positionOffsetPixels);
+                if (positionOffsetPixels == 0) {
+                    mPager.setCurrentItem(position);
                 }
             }
 
-            @오버라이드
-            선택한 페이지의 공용 공백(입력 위치) {
-                super.Selected(위치) 페이지에서;
-                mIndicator.animatePage선택(position%num_page);
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                mIndicator.animatePageSelected(position%num_page);
             }
         });
     }
