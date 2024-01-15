@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#C2F189"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#C8C8C8"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/returnbutton"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-6dp" />
+
+    <EditText
+        android:layout_width="243dp"
+        android:layout_height="41dp"
+        android:hint="이메일 주소"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="125dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="중복 확인"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 확인"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="41dp"
+        android:hint="비밀번호 확인"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="313dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="41dp"
+        android:hint="이름"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="405dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="휴대폰 번호"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <EditText
+        android:layout_width="234dp"
+        android:layout_height="43dp"
+        android:hint="휴대폰 인증"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="496dp"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:text="인증번호 발송"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인증 번호"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="41dp"
+        android:hint="인증 번호"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="593dp"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="41dp"
+        android:hint="비밀번호"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미확인"
+        android:textColor="#F60404"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="336dp"
+        android:layout_height="46dp"
+        android:text="회원가입 하기"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="669dp"
+        android:background="#63AC0F"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
