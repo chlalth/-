@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/default_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#C2F189"
+        android:gravity="center"
+        android:text="fit-fresh"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+
+
+    <Button
+        android:id="@+id/default_search_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="67dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="login"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:gravity="center"
+        android:layout_marginBottom="4dp"
+        android:background="#63AC0F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+
+    <!-- 여기서부터  LinearLayout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!--=1=-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        </LinearLayout>
+        <!--=2=-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/info_image_button"
+                android:layout_width="150dp"
+                android:layout_height="171dp"
+                android:background="@drawable/healthdata"
+                android:textColor="#101010"
+                tools:layout_editor_absoluteY="70dp" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="210dp"
+                android:layout_height="139dp"
+                android:gravity="center"
+                android:text="헬스 데이터 검사 받고
+                 나에게 필요한 농수산물 추천
+                 받고 싶다면 옆에 버튼 click!"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="185dp"
+                tools:layout_editor_absoluteY="78dp" />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="139dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="628dp" />
+        </LinearLayout>
+        <!--=3=-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/grayline"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                android:background="#D1D1D1"
+
+                />
+        </LinearLayout>
+        <!--==4(밤 고구마 사과 그림 )==-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bam_image_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bammain"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="254dp" />
+            <Button
+                android:id="@+id/sp_image_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/spmain"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="155dp"
+                tools:layout_editor_absoluteY="254dp" />
+            <Button
+            android:id="@+id/apple"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/applemain"
+            android:textColor="@color/black"
+                android:layout_weight="1"
+            tools:layout_editor_absoluteX="293dp"
+            tools:layout_editor_absoluteY="255dp" />
+
+        </LinearLayout>
+        <!--=5(밤 고구마 사과 그림 설명)=-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_bam"
+                android:layout_width="36dp"
+                android:layout_height="27dp"
+                android:gravity="center"
+                android:text="밤"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="354dp" />
+            <TextView
+                android:id="@+id/tv_sp"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="고구마"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="178dp"
+                tools:layout_editor_absoluteY="355dp" />
+            <TextView
+                android:id="@+id/tv_apple"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="사과"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="317dp"
+                tools:layout_editor_absoluteY="355dp" />
+        </LinearLayout>
+        <!--=6(복숭아 옥수수 고추 그림)=-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/peach_image_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/peachmain"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="389dp" />
+            <Button
+                android:id="@+id/conr_image_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/cornmain"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="155dp"
+                tools:layout_editor_absoluteY="389dp" />
+            <Button
+                android:id="@+id/pepper_image_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/gochumain"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="293dp"
+                tools:layout_editor_absoluteY="393dp" />
+        </LinearLayout>
+        <!--=7(복숭아 옥수수 고추 그림 설명)=-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_peach"
+                android:layout_width="61dp"
+                android:layout_height="31dp"
+                android:gravity="center"
+                android:text="복숭아"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="489dp" />
+            <TextView
+                android:id="@+id/tv_corn"
+                android:layout_width="71dp"
+                android:layout_height="27dp"
+                android:gravity="center"
+                android:text="옥수수"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="489dp" />
+            <TextView
+                android:id="@+id/tv_gochu"
+                android:layout_width="56dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="고추"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="315dp"
+                tools:layout_editor_absoluteY="493dp" />
+        </LinearLayout>
+        <!--=8(기타 그림)=-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/etc_image_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/etcmain"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="528dp" />
+
+            <View
+                android:id="@+id/b1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="528dp" />
+            <View
+                android:id="@+id/b2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="528dp" />
+        </LinearLayout>
+        <!--9(기타 글자)-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_etc"
+                android:layout_width="53dp"
+                android:layout_height="27dp"
+                android:gravity="center"
+                android:text="기타"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="628dp" />
+            <View
+                android:layout_width="53dp"
+                android:layout_height="27dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="628dp" />
+            <View
+                android:layout_width="53dp"
+                android:layout_height="27dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="628dp" />
+        </LinearLayout>
+        <!--10(하단 공간맞추기-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="628dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
