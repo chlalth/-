@@ -18,16 +18,26 @@
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="-2dp" />
 
-    <Button
-        android:id="@+id/default_search_button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@id/default_search_button"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+
+
+        android:focusable="true"
+        app:iconifiedByDefault="true"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+
+        app:queryHint="test"
+
+
+        />
+
 
     <Button
         android:id="@+id/default_returnbutton"
