@@ -22,6 +22,11 @@
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </LinearLayout>
     <!--fit_fresh로고-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,11 +36,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="133dp"
-            android:layout_marginTop="178dp"
+
             android:text="fit-fresh"
             android:textSize="40dp"
             android:textStyle="bold"
-             />
+            />
     </LinearLayout>
     <!--아이디를 입력해주세요-->
     <LinearLayout
@@ -85,16 +90,27 @@
 
     </LinearLayout>
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+        <View
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            >
+
+        </View>
         <Button
             android:id="@+id/button6"
             style="@style/Widget.AppCompat.Button.Small"
-            android:layout_width="78dp"
+            android:layout_width="50dp"
             android:layout_height="45dp"
-            android:layout_marginStart="55dp"
-            android:layout_marginTop="39dp"
+
             android:background="#00FFFFFF"
             android:minWidth="88dip"
             android:text="회원 가입"
@@ -104,10 +120,8 @@
             />
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="wrap_content"
+            android:layout_width="2dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="51dp"
             android:text="|"
             android:layout_weight="1"
             android:gravity="center"
@@ -117,22 +131,19 @@
         <Button
             android:id="@+id/button7"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="36dp"
-            android:background="#00FFFFFF"
-            android:text="아이디 찾기"
-            android:textColor="#595959"
+            android:layout_width="50dp"
+            android:layout_height="34dp"
+
             android:layout_weight="1"
+            android:background="#00FFFFFF"
             android:gravity="center"
-            />
+            android:text="아이디 찾기"
+            android:textColor="#595959" />
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="wrap_content"
+            android:layout_width="2dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="51dp"
+
             android:text="|"
             android:layout_weight="1"
             android:gravity="center"
@@ -142,16 +153,20 @@
         <Button
             android:id="@+id/button8"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="107dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="36dp"
+
             android:background="#00FFFFFF"
             android:text="비밀번호 찾기"
             android:textColor="#595959"
             android:layout_weight="1"
             android:gravity="center"
-             />
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+            android:layout_weight="1">
+        </View>
 
     </LinearLayout>
 </LinearLayout>
