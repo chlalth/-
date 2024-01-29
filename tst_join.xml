@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/default_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#C2F189"
+        android:gravity="center"
+        android:text="fit-fresh"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <Button
+        android:id="@+id/default_search_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/default_returnbutton"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#63AC0F"
+        android:foreground="@drawable/returnbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="80dp">
+
+            </View>
+
+        </LinearLayout>
+        <!--id-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="28dp"
+                android:text="아이디"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/default_action_bar" />
+
+
+        </LinearLayout>
+        <!--email_입력-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="243dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="8dp"
+                android:hint="이메일 주소"
+                android:textSize="15dp"
+                />
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="8dp"
+                android:text="중복 확인"
+                android:textSize="10dp"
+                />
+
+        </LinearLayout>
+        <!--password-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="23dp"
+                android:text="비밀번호"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+
+        </LinearLayout>
+        <!--pw입력-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="340dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="12dp"
+                android:hint="비밀번호"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+        <!--pw확인-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="19dp"
+                android:text="비밀번호 확인"
+                 />
+
+        </LinearLayout>
+        <!--pw확인 입력-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="340dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="10dp"
+                android:hint="비밀번호 확인"
+                android:textSize="15dp"
+                 />
+
+        </LinearLayout>
+        <!-- 이름-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="19dp"
+                android:text="이름"
+                 />
+
+        </LinearLayout>
+        <!--이름입력-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="340dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="11dp"
+                android:hint="이름"
+                android:textSize="15dp"
+                 />
+
+        </LinearLayout>
+        <!--휴대폰번호-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="19dp"
+                android:text="휴대폰 번호"
+                 />
+
+        </LinearLayout>
+        <!--휴대폰번호 입력-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="340dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="11dp"
+                android:hint="휴대폰 인증"
+                android:textSize="15dp"
+                 />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="336dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="34dp"
+                android:background="#63AC0F"
+                android:text="회원가입 하기"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
