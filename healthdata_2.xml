@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/default_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#C2F189"
+        android:gravity="center"
+        android:text="fit-fresh"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/default_returnbutton"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:background="#63AC0F"
+        android:foreground="@drawable/returnbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/default_action_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q. 일주일동안 가장 많이 섭취한 영양소를 선택해주세요. "
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="( 복수 선택 가능 )"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밥류 ( 백미, 현미, 콩밥 등)"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="패스트푸드( 피자, 햄버거, 떡볶이 )"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="면류 (칼국수, 우동, 짜장면, 라면, 컵라면 등) "
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="빵류 ( 식빵 등 ) "
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="찌개류( 된장찌개, 김치찌개, 미역국 )"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="달걀, 두부류"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="볶음류 (제육, 불고기 등)"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="튀김류 (치킨, 돈까스, 새우튀김, 부침개 등 )"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어류 ( 고등어, 갈치 등 ) "
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나물류 ( 시금치나물, 콩나물 등)"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장류 ( 고추장, 된장, 쌈장 등 )"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쌈채소류 ( 상추, 깻잎 등 ) "
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="발효식품 (김치, 장아찌 등)"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구황작물류 (고구마, 감자 등)"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="유제품류 ( 요거트, 우유, 치즈 등)"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="과일류 ( 사과, 배, 귤, 포도, 망고 등)"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="491dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카페인류 (커피, 초코, 녹차 등 )"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스낵류"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="알코올"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1리터 미만 "
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="604dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1~2리터 "
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="604dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3리터 이상"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="604dp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하루 물 섭취량"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="296dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="22dp"
+        android:text="다음"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

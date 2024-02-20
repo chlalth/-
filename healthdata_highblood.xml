@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <TextView
+        android:id="@+id/default_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#C2F189"
+        android:gravity="center"
+        android:text="fit-fresh"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/default_returnbutton"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:background="#63AC0F"
+        android:foreground="@drawable/returnbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/default_action_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="296dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="22dp"
+        android:text="다음"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19. 뒤통수 부위에 두통이 발생하나요?"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20. 주로 아침에 발생하여 몇시간 후에 사라지나요?"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21. 두통, 코피, 안면홍조 증상이 있나요? "
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22. 수면 무호흡증이 있나요? "
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23. 어지럼증이 자주, 반복적으로 나타나나요?"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24. 뒷목이 뻣뻣한 증상이 있나요?"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25. 화가 날때마다 목덜미가 당기는 증상이 있나요? "
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="26. 스트레스나 불안 때문에 가슴 두근거림, 두통, 어지러움증이 발생하나요? "
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
