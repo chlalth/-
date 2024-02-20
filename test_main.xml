@@ -35,7 +35,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/below_login_button"
         android:layout_width="67dp"
         android:layout_height="57dp"
         android:layout_marginEnd="12dp"
@@ -142,7 +142,7 @@
                 tools:layout_editor_absoluteX="155dp"
                 tools:layout_editor_absoluteY="254dp" />
             <Button
-            android:id="@+id/apple"
+            android:id="@+id/apple_image_button"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/applemain"
