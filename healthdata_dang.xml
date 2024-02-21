@@ -5,84 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="422dp" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="473dp" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="526dp" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="577dp" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="379dp" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="319dp" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="220dp" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="270dp" />
-
-    <TextView
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:text="2. 물을 다량 마셔도 입안이 계속 마르고 혀가 건조한 듯한 느낌을 받으시나요?"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="160dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3. 자다 깨서 화장실을 갈 정도로 소변량이 늘었나요?"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="220dp" />
-
-    <TextView
-
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:text="4. 소변에서 평소와 다른 냄새가 나거나 거품이 오랫동안 사라지지 않는가요? "
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="261dp" />
-
-    <TextView
-
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:text="5. 식사를 마친 뒤 얼마 지나지 않아 새로운 음식을 찾게 되나요? "
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="319dp" />
-
     <TextView
         android:id="@+id/default_action_bar"
         android:layout_width="match_parent"
@@ -119,85 +41,222 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1. 과거에 비해 많은 양의 물을 마시게 되었나요?"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="123dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="해당되는 곳에 체크 표시를 해주세요."
+                />
 
-    <RadioButton
-        android:id="@+id/radioButton36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="123dp" />
 
-    <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="해당되는 곳에 체크 표시를 해주세요."
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="84dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
 
-    <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="1. 과거에 비해 많은 양의 물을 마시게 되었나요?"
+                 />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="6. 섭취량에 비해 살이 많이 빠지거나 쪘나요?"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="379dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 
-    <TextView
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="2. 물을 다량 마셔도 입안이 계속 마르고 혀가 건조한 듯한 느낌을 받으시나요?"
+                 />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" 7. 충분한 휴식을 취해도 지속적으로 피로감을 느끼나요?"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="422dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 
-    <TextView
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="3. 자다 깨서 화장실을 갈 정도로 소변량이 늘었나요?"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="220dp" />
 
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:text="8. 사물을 보는데 초점이 어긋나고 시야가 침침해진 것을 느끼셨나요? "
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="464dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 
-    <TextView
+        </LinearLayout>
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="9. 손발저림을 자주 느끼나요? "
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="526dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
 
-    <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="4. 소변에서 평소와 다른 냄새가 나거나 거품이 오랫동안 사라지지 않는가요? "
+                 />
 
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:text="10. 전에 비해 상처 회복 속도가 느리거나 염증이 잘 생기는 증상이 있나요?"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="568dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="160dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="296dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="22dp"
-        android:text="다음"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="5. 식사를 마친 뒤 얼마 지나지 않아 새로운 음식을 찾게 되나요? "
+                 />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="6. 섭취량에 비해 살이 많이 빠지거나 쪘나요?"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text=" 7. 충분한 휴식을 취해도 지속적으로 피로감을 느끼나요?"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="422dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="8. 사물을 보는데 초점이 어긋나고 시야가 침침해진 것을 느끼셨나요? "
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="9. 손발저림을 자주 느끼나요? "
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="526dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="10. 전에 비해 상처 회복 속도가 느리거나 염증이 잘 생기는 증상이 있나요?"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="568dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:text="다음"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
